@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOEN 287 - Assignment 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My SOEN 287 Assignment</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="lists">
+            <h2>Key Terms</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>The markup language used to structure content on the web.</dd>
+                <dt>CSS</dt>
+                <dd>The stylesheet language used to control presentation.</dd>
+            </dl>
+            <h2>Steps to Build a Web Page</h2>
+            <ol>
+                <li>Plan the content</li>
+                <li>Write the HTML
+                    <ol>
+                        <li>Add structural elements</li>
+                        <li>Add semantic tags</li>
+                    </ol>
+                </li>
+                <li>Style with CSS</li>
+            </ol>
+            <h2>Favorite Technologies</h2>
+            <ul>
+                <li>Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+                <li>Backend</li>
+            </ul>
+        </section>
+        <section id="table">
+            <h2>Course Schedule</h2>
+            <table border="1">
+                <tr>
+                    <th>Day</th>
+                    <th>Course</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>SOEN 287</td>
+                    <td>
+                        <!-- nested table -->
+                        <table border="1">
+                            <tr>
+                                <th>Time</th>
+                                <th>Room</th>
+                            </tr>
+                            <tr>
+                                <td>10:00 - 11:30</td>
+                                <td>H-110</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>SOEN 228</td>
+                    <td>2:45 - 4:00, EV-1.162</td>
+                </tr>
+            </table>
+        </section>
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="program">Program:</label>
+                    <select id="program" name="program">
+                        <option value="soen">Software Engineering</option>
+                        <option value="comp">Computer Science</option>
+                        <option value="elec">Electrical Engineering</option>
+                    </select><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Which topics interest you?</p>
+                    <input type="checkbox" id="html" name="interests" value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" name="interests" value="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="js" name="interests" value="js">
+                    <label for="js">JavaScript</label>
+
+                    <input type="checkbox" id="backend" name="interests" value="backend">
+                    <label for="backend">Backend Dev</label>
+
+                    <input type="checkbox" id="db" name="interests" value="db">
+                    <label for="db">Databases</label>
+                    <br>
+
+                    <p>Preferred learning style:</p>
+                    <input type="radio" id="visual" name="learning" value="visual">
+                    <label for="visual">Visual</label>
+
+                    <input type="radio" id="handson" name="learning" value="handson">
+                    <label for="handson">Hands-on</label>
+
+                    <input type="radio" id="reading" name="learning" value="reading">
+                    <label for="reading">Reading</label>
+
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Anh Khoi</p>
+    </footer>
+
+</body>
+
+</html>
