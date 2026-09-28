@@ -11,7 +11,7 @@
     <header>
         <h1>My SOEN 287 Assignment</h1>
     </header>
-
+<!-- Used <nav> because these links are the page's primary navigation, so screen readers can jump straight to them -->
     <nav>
         <ul>
             <li><a href="#lists">Lists</a></li>
@@ -63,7 +63,7 @@
                     <td>Monday</td>
                     <td>SOEN 287</td>
                     <td>
-                        <!-- nested table -->
+            <!-- Nested a second table inside this cell because the time and room only describe Monday's SOEN 287 row -->
                         <table border="1">
                             <tr>
                                 <th>Time</th>
@@ -86,10 +86,10 @@
         <section id="form">
             <h2>Registration Form</h2>
             <form action="#" method="get">
-
+            <!-- Used <fieldset> with a <legend> to group related inputs, so screen readers announce which group each field belongs to -->
                 <fieldset>
                     <legend>Personal Information</legend>
-
+                <!-- Linked each <label> to its input with for/id so clicking the label focuses the field and screen readers read it aloud --> 
                     <label for="fullname">Full Name:</label>
                     <input type="text" id="fullname" name="fullname"><br>
 
