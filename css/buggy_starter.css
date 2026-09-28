@@ -25,6 +25,11 @@ body {
   padding: 12px;
 }
 
+.event-date {
+  text-align: center;
+  color: #b00020;
+}
+
 table {
   border-collapse: collapse;
 }
